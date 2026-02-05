@@ -1,0 +1,40 @@
+import React from "react";
+import { motion } from "framer-motion";
+
+export const Toggle = ({ selected, setSelected }) => {
+  return (
+    <div className="relative mx-auto mt-3 flex w-fit items-center rounded-full bg-zinc-900">
+      <button
+        className={`relative z-10 flex items-center gap-2 px-3 py-1.5 text-sm font-medium ${
+          selected === "monthly" ? "text-black" : "text-white"
+        }`}
+        onClick={() => {
+          setSelected("monthly");
+        }}
+      >
+        <span className="relative z-10">Monthly</span>
+      </button>
+      <button
+        className={`relative z-10 flex items-center w-fit gap-2 px-3 py-1.5 text-sm font-medium ${
+          selected === "annual" ? "text-black" : "text-white"
+        }`}
+        onClick={() => {
+          setSelected("annual");
+        }}
+      >
+        <span className="relative z-10">Yearly</span>
+      </button>
+      <div
+        className={`absolute inset-0 z-0 flex ${
+          selected === "annual" ? "justify-end" : "justify-start"
+        }`}
+      >
+        <motion.span
+          layout
+          transition={{ ease: "easeInOut" }}
+          className="h-full w-1/2 rounded-full border border-zinc-900 bg-white"
+        />
+      </div>
+    </div>
+  );
+};
