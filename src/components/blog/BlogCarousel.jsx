@@ -19,61 +19,54 @@ export const BlogCarousel = () => {
     Math.abs(offset) < CARD_SIZE * (posts.length - CARD_BUFFER);
 
   const shiftLeft = () => {
-    if (!CAN_SHIFT_LEFT) {
-      return;
-    }
+    if (!CAN_SHIFT_LEFT) return;
     setOffset((pv) => (pv += CARD_SIZE));
   };
 
   const shiftRight = () => {
-    if (!CAN_SHIFT_RIGHT) {
-      return;
-    }
+    if (!CAN_SHIFT_RIGHT) return;
     setOffset((pv) => (pv -= CARD_SIZE));
   };
 
   return (
-    <section ref={ref}>
-      <div className="relative overflow-hidden px-2 md:px-4">
-        <div className="mx-auto max-w-6xl">
-          <div className="mb-6 flex items-center justify-between">
-            <h2 className="text-center text-3xl font-medium leading-tight md:text-start md:text-4xl md:leading-tight">
-              More from us
-            </h2>
+    <section ref={ref} className="px-2 md:px-4">
+      <div className="mx-auto max-w-6xl">
+        <div className="mb-6 flex items-end justify-between gap-4">
+          <h2 className="text-3xl font-medium leading-tight md:text-4xl md:leading-tight">
+            Take A Peek At Our Latest Posts
+          </h2>
 
-            <div className="flex items-center gap-2">
-              <button
-                className={`rounded-md border border-zinc-900 bg-white p-1.5 text-2xl transition-all ${
-                  CAN_SHIFT_LEFT ? "hover:bg-zinc-200" : "opacity-30"
-                }`}
-                disabled={!CAN_SHIFT_LEFT}
-                onClick={shiftLeft}
-              >
-                <FiArrowLeft />
-              </button>
-              <button
-                className={`rounded-md border border-zinc-900 bg-white p-1.5 text-2xl transition-all ${
-                  CAN_SHIFT_RIGHT ? "hover:bg-zinc-200" : "opacity-30"
-                }`}
-                disabled={!CAN_SHIFT_RIGHT}
-                onClick={shiftRight}
-              >
-                <FiArrowRight />
-              </button>
-            </div>
+          <div className="flex shrink-0 items-center gap-2">
+            <button
+              className={`rounded-2xl border border-zinc-900 bg-white p-1.5 text-2xl transition-all duration-300 ${
+                CAN_SHIFT_LEFT ? "hover:bg-zinc-200 hover:rounded-md" : "opacity-30"
+              }`}
+              disabled={!CAN_SHIFT_LEFT}
+              onClick={shiftLeft}
+            >
+              <FiArrowLeft />
+            </button>
+            <button
+              className={`rounded-2xl border border-zinc-900 bg-white p-1.5 text-2xl transition-all duration-300 ${
+                CAN_SHIFT_RIGHT ? "hover:bg-zinc-200 hover:rounded-md" : "opacity-30"
+              }`}
+              disabled={!CAN_SHIFT_RIGHT}
+              onClick={shiftRight}
+            >
+              <FiArrowRight />
+            </button>
           </div>
+        </div>
+
+        <div className="relative overflow-hidden">
           <motion.div
-            animate={{
-              x: offset,
-            }}
-            transition={{
-              ease: "easeInOut",
-            }}
-            className="flex"
+            animate={{ x: offset }}
+            transition={{ ease: "easeInOut" }}
+            className="flex gap-6"
           >
-            {posts.map((post) => {
-              return <Post key={post.id} {...post} />;
-            })}
+            {posts.map((post) => (
+              <Post key={post.id} {...post} />
+            ))}
           </motion.div>
         </div>
       </div>

@@ -1,0 +1,42 @@
+export const TEAM = [
+  {
+    id: 1,
+    name: "Michael S.",
+    role: "Product Lead",
+    team: "Vision & Strategy",
+    avatar: "https://api.dicebear.com/9.x/personas/svg?seed=Robert&skinColor=d78774,e5a07e,e7a391,eeb4a4&backgroundColor=b6e3f4",
+    bio: "Obsessed with planning and execution. Builds detailed roadmaps and contingency plans so the team always knows what's next.",
+  },
+  {
+    id: 2,
+    name: "Sara T.",
+    role: "Design",
+    team: "UI/UX",
+    avatar: "https://api.dicebear.com/9.x/personas/svg?seed=Caleb&skinColor=d78774,e5a07e,e7a391,eeb4a4&backgroundColor=b6e3f4",
+    bio: "Creates interfaces that feel effortless. Believes great design heals broken user experiences and knows when to challenge convention.",
+  },
+  {
+    id: 3,
+    name: "Lincoln B.",
+    role: "Operations",
+    team: "Reliability",
+    avatar: "https://api.dicebear.com/9.x/personas/svg?seed=Aiden&skinColor=d78774,e5a07e,e7a391,eeb4a4&backgroundColor=b6e3f4",
+    bio: "Keeps systems running when everything's on fire. Fiercely protective of uptime and won't ship until it's bulletproof.",
+  },
+  {
+    id: 4,
+    name: "Fernando S.",
+    role: "Engineering",
+    team: "Platform",
+    avatar: "https://api.dicebear.com/9.x/personas/svg?seed=Emery&skinColor=d78774,e5a07e,e7a391,eeb4a4&backgroundColor=b6e3f4",
+    bio: "Builds integrations that just work. Finds creative solutions to technical debt and always delivers on promises.",
+  },
+  {
+    id: 5,
+    name: "Theodore B.",
+    role: "Data",
+    team: "Insights",
+    avatar: "https://api.dicebear.com/9.x/personas/svg?seed=Christopher&skinColor=d78774,e5a07e,e7a391,eeb4a4&backgroundColor=b6e3f4",
+    bio: "Spots patterns in the noise. Turns raw data into actionable insights and keeps everyone honest about what's actually working.",
+  },
+];

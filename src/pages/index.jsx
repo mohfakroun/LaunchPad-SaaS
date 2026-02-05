@@ -8,6 +8,7 @@ import { NAV_LINKS } from "@/components/navigation/constants";
 import { Stats } from "@/components/stats/Stats";
 import { BenefitsGrid } from "@/components/benefits-grid/BenefitsGrid";
 import { font } from "@/fonts";
+import { OurTeam } from "@/components/our-team/OurTeam";
 import { BlogCarousel } from "@/components/blog/BlogCarousel";
 import { FinalCTA } from "@/components/final-cta/FinalCTA";
 import { Pricing } from "@/components/pricing/Pricing";
@@ -26,9 +27,10 @@ export default function Home() {
         <Supports />
         <BenefitsGrid />
         <Pricing />
-        <BlogCarousel />
+        <OurTeam />
       </div>
       <EmailCapture />
+        <BlogCarousel />
       <FinalCTA />
       <Footer />
     </main>

@@ -10,65 +10,58 @@ export const BREAKPOINTS = {
 export const posts = [
   {
     id: 1,
-    imgUrl:
-      "https://images.unsplash.com/photo-1569091791842-7cfb64e04797?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imgUrl: "https://picsum.photos/seed/productivity/800/600?blur=2",
     tag: "Productivity",
-    title: "An example blog post",
+    title: "I Deleted Slack For A Week And My Team Loved Me",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolor.",
+      "Controversial opinion: Maybe we don't need 47 channels and constant notifications. What happened when we forced ourselves to actually focus.",
   },
   {
     id: 2,
-    imgUrl:
-      "https://images.unsplash.com/photo-1470790376778-a9fbc86d70e2?q=80&w=2608&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imgUrl: "https://picsum.photos/seed/focus-work/800/600?blur=1",
     tag: "Work-life Balance",
-    title: "Another example blog post",
+    title: "Why We Banned Meetings On Fridays (And Productivity Doubled)",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolor.",
+      "Turns out people actually get work done when they're not in back-to-back Zoom calls. Who knew? Here's our experiment that became permanent.",
   },
   {
     id: 3,
-    imgUrl:
-      "https://images.unsplash.com/photo-1558522195-e1201b090344?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imgUrl: "https://picsum.photos/seed/startup-desk/800/600?blur=1",
     tag: "Marketing",
-    title: "Same with this one",
+    title: "Our Viral Tweet Was An Accident And We Have No Idea How It Happened",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolor.",
+      "Sometimes the algorithm gods smile upon you for no reason. A deep dive into our most successful marketing campaign that we definitely planned all along.",
   },
   {
     id: 4,
-    imgUrl:
-      "https://images.unsplash.com/photo-1585007600263-71228e40c8d1?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imgUrl: "https://picsum.photos/seed/remote-routine/800/600?blur=1",
     tag: "Sales",
-    title: "Maybe not this one",
+    title: "Why Your Free Trial is Actually Scaring People Away",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolor.",
+      "Hot take: 14 days isn't enough time for anyone to actually use your product. Here's why we switched to 30 days and our conversion rate stopped tanking.",
   },
   {
     id: 5,
-    imgUrl:
-      "https://images.unsplash.com/photo-1586447795212-b8ea5253ac2c?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imgUrl: "https://picsum.photos/seed/creative-process/800/600?blur=1",
     tag: "Community",
-    title: "I was lying on the last one",
+    title: "We Let Our Users Name Features And Immediately Regretted It",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolor.",
+      "Turns out democracy in product development means someone will suggest naming your checkout flow 'Cash Me Outside.' A cautionary tale.",
   },
   {
     id: 6,
-    imgUrl:
-      "https://images.unsplash.com/photo-1640894822819-0a94bec464bf?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imgUrl: "https://picsum.photos/seed/clean-workspace/800/600?blur=1",
     tag: "Productivity",
-    title: "Or was I?",
+    title: "The Death of Email: We Moved Everything to Async and Survived",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolor.",
+      "No more inbox anxiety, no more urgent flags on non-urgent things. Here's how we killed internal email and lived to tell the tale.",
   },
   {
     id: 7,
-    imgUrl:
-      "https://images.unsplash.com/photo-1537402006484-b0b4d22e5d83?q=80&w=2550&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imgUrl: "https://picsum.photos/seed/growth-experiment/800/600?blur=1",
     tag: "Growth",
-    title: "Okay that's enough",
+    title: "Our Landing Page Got 10K Visits and Zero Signups (Here's Why)",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolor.",
+      "The embarrassing story of how we learned that 'disruptive synergy' means absolutely nothing to actual humans. Plus, what we changed that actually worked.",
   },
 ];
