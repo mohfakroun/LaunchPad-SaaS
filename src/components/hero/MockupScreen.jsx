@@ -1,6 +1,5 @@
 import React from "react";
 import { FiChevronDown, FiTrendingUp, FiArrowUpRight } from "react-icons/fi";
-import { LogoSmall } from "../navigation/Logo";
 import Image from "next/image";
 
 export const MockupScreen = () => {
@@ -12,17 +11,11 @@ export const MockupScreen = () => {
           <span className="size-2 rounded-full bg-yellow-400" />
           <span className="size-2 rounded-full bg-green-400" />
         </div>
-
-
         <a className="rounded bg-zinc-600 px-2 py-0.5 text-xs text-zinc-100 hover:underline " href="https://www.github.com/mohfakroun" target="_blank" rel="nofollow">
         www.github.com/mohfakroun
         </a>
-
         <FiChevronDown className="text-zinc-800" />
       </div>
-
-
-
       <div className="relative z-0 h-full w-full overflow-hidden rounded-t-lg bg-white border border-zinc-800">
         <div className="flex items-center justify-between border-b border-zinc-200 px-2 py-1 md:px-3">
           <div className="flex items-center gap-2">
@@ -94,9 +87,6 @@ export const MockupScreen = () => {
                   realtime
                 </span>
               </div>
-
-
-
               <div className="mt-2 hidden grid-cols-3 gap-2 text-[9px] text-zinc-600 sm:grid md:text-[10px]">
                 <span className="rounded bg-zinc-50 px-2 py-1">
                   Top page: /pricing
@@ -111,9 +101,6 @@ export const MockupScreen = () => {
             </div>
           </div>
         </div>
-
-
-        <div className="absolute bottom-0 left-0 right-0 top-0 z-10 bg-gradient-to-b from-white/0 to-white/70" />
       </div>
     </div>
   );

@@ -1,19 +1,11 @@
 import React from "react";
 import { Block } from "./Block";
 import {
-  FiArrowUpRight,
-  FiClipboard,
   FiCoffee,
-  FiDollarSign,
-  FiFeather,
-  FiInbox,
-  FiMove,
-  FiRepeat,
   FiSmile,
 } from "react-icons/fi";
 import { LuCircleDollarSign } from "react-icons/lu";
 import { FaChartLine } from "react-icons/fa6";
-
 import { twMerge } from "tailwind-merge";
 import { CardTitle } from "./CardTitle";
 import { CardSubtitle } from "./CardSubtitle";
@@ -46,7 +38,7 @@ export const HighlighBlocks = () => {
 };
 
 const HighlightBlock = ({ iconClassName, Icon, title, subtitle }) => (
-  <Block className="col-span-3 space-y-1.5 md:col-span-1 shadow-inner shadow-zinc-900">
+  <Block className="col-span-3 space-y-1.5 md:col-span-1 shadow-inner shadow-zinc-900/40">
     <Icon className={twMerge("text-3xl")} />
     <CardTitle>{title}</CardTitle>
     <CardSubtitle>{subtitle}</CardSubtitle>

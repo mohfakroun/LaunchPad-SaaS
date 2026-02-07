@@ -6,7 +6,7 @@ export const Block = ({ className, ...rest }) => {
   return (
     <motion.div
       className={twMerge(
-        "col-span-1 rounded-lg border-2 border-zinc-900 bg-white p-6",
+        "col-span-1 rounded-lg border-zinc-900 bg-white p-6",
         className
       )}
       {...rest}

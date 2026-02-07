@@ -9,15 +9,7 @@ export const NAV_LINKS = [
       {
         title: "Product 2",
         href: "#",
-      },
-      {
-        title: "Product 3",
-        href: "#",
-      },
-      {
-        title: "Product 4",
-        href: "#",
-      },
+      }
     ],
   },
   {
@@ -56,15 +48,7 @@ export const NAV_LINKS = [
       {
         title: "Media 1",
         href: "#",
-      },
-      {
-        title: "Media 2",
-        href: "#",
-      },
-      {
-        title: "Media 3",
-        href: "#",
-      },
+      }
     ],
   },
   {

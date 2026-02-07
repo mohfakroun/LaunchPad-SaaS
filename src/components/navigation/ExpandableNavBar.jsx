@@ -4,8 +4,8 @@ import { FiMenu } from "react-icons/fi";
 import { Logo } from "./Logo";
 import { DesktopLinks } from "./DesktopLinks";
 import { MobileLinks } from "./MobileLinks";
-import { Announcement } from "./Announcement";
-import { Button } from "../shared/Button";
+import { Button } from "../shared/PricingButton";
+
 
 export const ExpandableNavBar = ({ children, links }) => {
   const [hovered, setHovered] = useState(null);
@@ -35,9 +35,12 @@ export const ExpandableNavBar = ({ children, links }) => {
                 activeSublinks={activeSublinks}
               />
             </div>
-
-              <span className="font-bold hidden md:block">Sign up </span> 
-
+              {/* replace this with your sign up page. depending on your business logic you can redirect to your product
+              or create sign up page and use the Link component from next/link instead of an anchor tag(its just better for seo and performance)
+              */}
+              <a href=""> 
+              <Button className="font-light hidden md:block">Sign up </Button>
+              </a>
             <button
               onClick={() => setMobileNavOpen((pv) => !pv)}
               className="mt-0.5 block text-2xl md:hidden"

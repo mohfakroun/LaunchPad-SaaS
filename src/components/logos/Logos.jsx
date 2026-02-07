@@ -1,28 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import {
-  SiNike,
-  Si3M,
-  SiAbstract,
-  SiAdobe,
-  SiAirtable,
-  SiAmazon,
-  SiBox,
-  SiBytedance,
-  SiChase,
-  SiCloudbees,
-  SiBurton,
-  SiBmw,
-  SiHeroku,
-  SiBuildkite,
-  SiCouchbase,
-  SiDailymotion,
-  SiDeliveroo,
-  SiEpicgames,
-  SiGenius,
-  SiGodaddy,
-} from "react-icons/si";
-import { IconType } from "react-icons";
+
 
 export const Logos = () => {
   return (
@@ -55,7 +33,7 @@ const TranslateWrapper = ({ children, reverse }) => {
   );
 };
 
-const LogoItem = ({ Icon, name }) => {
+const LogoItem = ({  name }) => {
   return (
     <span className="flex items-center justify-evenly gap-10 px-4 py-2 md:py-4 rounded-xl border-r border-2 border-zinc-900 bg-white shadow-[8px_8px_0_0_rgba(24,24,27,1)]">
       <span className="whitespace-nowrap text-xl font-light uppercase md:text-2xl">
@@ -67,16 +45,15 @@ const LogoItem = ({ Icon, name }) => {
 
 const LogoItemsTop = () => (
   <>
-    <LogoItem Icon={SiNike} name="Nike" />
-    <LogoItem Icon={Si3M} name="Peachr" />
-    <LogoItem Icon={SiAbstract} name="Sage Learning" />
-    <LogoItem Icon={SiAdobe} name="Adobe" />
-    <LogoItem Icon={SiAirtable} name="Airtable" />
-    <LogoItem Icon={SiAmazon} name="Amazon" />
-    <LogoItem Icon={SiBox} name="Box" />
-    <LogoItem Icon={SiBytedance} name="Bytedance" />
-    <LogoItem Icon={SiChase} name="Chase" />
-    <LogoItem Icon={SiCloudbees} name="Cloudebees" />
+    <LogoItem name="Nike" />
+    <LogoItem name="Peachr" />
+    <LogoItem name="Sage Learning" />
+    <LogoItem name="Adobe" />
+    <LogoItem name="AWS" />
+    <LogoItem name="Bolt" />
+    <LogoItem name="Uber" />
+    <LogoItem name="Microsoft" />
+    <LogoItem name="Barclays" />
   </>
 );
 

@@ -36,7 +36,7 @@ const Testimonial = ({ imgSrc, name, title, company, content }) => (
             }}
             src={imgSrc}
             alt="avatar"
-            className="size-24 rounded-lg border-2 border-zinc-900"
+            className="md:size-24 size-16 rounded-lg border-2 border-zinc-900"
           />
         </div>
         <motion.div

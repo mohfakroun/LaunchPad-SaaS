@@ -34,7 +34,7 @@ export const IntegrationsBlock = () => (
       <div className="grid w-full place-content-center border-2 border-zinc-900 rounded-2xl bg-zinc-100 py-8 text-white shadow-[4px_4px_0_0_rgba(24,24,27,1)]">
         <SiZapier className="text-4xl text-zinc-900" />
       </div>
-      <div className="grid w-full place-content-center border-[1px] border-zinc-200 rounded-2xl bg-white py-8 shadow-inner shadow-zinc-900">
+      <div className="grid w-full place-content-center border-zinc-200 rounded-2xl bg-white py-8 shadow-inner shadow-zinc-900/20">
         +1,000's more
       </div>
     </div>
