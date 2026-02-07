@@ -124,7 +124,7 @@ const PriceColumn = ({ highlight, title, price, statement, items }) => {
       }`}
     >
       {highlight && (
-        <span className="absolute right-4 top-4 rounded-full bg-indigo-600 px-2 py-0.5 text-sm text-white">
+        <span className="absolute right-4 top-4 rounded-full bg-white px-2 py-0.5 text-sm text-zinc-800 border border-zinc-900">
           Most Popular
         </span>
       )}
@@ -160,9 +160,15 @@ const PriceColumn = ({ highlight, title, price, statement, items }) => {
         ))}
       </div>
 
-      <Button className="w-full" intent={highlight ? "primary" : "secondary"}>
-        Try it now
-      </Button>
+        {/* Change the href to be your product link. 
+        If you don't have a product and are trying to capture leads, link this to your calendarly or any email capture provider you have.
+        OR wait for the relase of the stripe component 
+        */}
+       <a href="https://github.com/mohfakroun/LaunchPad-SaaS" target="_blank" rel="noopener noreferrer">
+        <Button className="w-full" intent={highlight ? "primary" : "secondary"}>
+          Try it now
+        </Button>
+      </a>
     </div>
   );
 };

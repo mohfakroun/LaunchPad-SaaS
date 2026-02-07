@@ -11,24 +11,27 @@ export const FeatureToggles = () => {
   const el = useMemo(() => data.find((d) => d.id === selected), [selected]);
 
   return (
-    <section className={`relative mx-auto max-w-6xl px-3 md:px-4 ${poppinsFont.className}`}>
+    <section
+      className={`relative mx-auto max-w-6xl px-3 md:px-4 ${poppinsFont.className}`}
+    >
       <div className="mb-10">
         <SectionHeading>Track work without the mess.</SectionHeading>
         <SectionSubheading>
-          Pick a view that matches how your team actually ships: issues, boards, timelines, docs.
+          Pick a view that matches how your team actually ships: issues, boards,
+          timelines, docs.
         </SectionSubheading>
       </div>
 
-
-      <div className="grid gap-6 md:grid-cols-[320px_1fr]">
-        <div className="md:sticky md:top-6 self-start">
+      <div className="grid gap-6 md:grid-cols-[340px_1fr] md:items-start">
+        {/* LEFT */}
+        <div className="min-w-0">
           <div className="rounded-xl border-2 border-zinc-900 bg-white p-3 shadow-[6px_6px_0_0_rgba(24,24,27,1)]">
             <p className="mb-3 text-xs font-semibold uppercase tracking-wider text-zinc-600">
               Features
             </p>
 
             <div className="flex flex-col gap-2">
-              {data.map((d, idx) => {
+              {data.map((d) => {
                 const active = d.id === selected;
 
                 return (
@@ -36,22 +39,24 @@ export const FeatureToggles = () => {
                     key={d.id}
                     onClick={() => setSelected(d.id)}
                     className={[
-                      "group w-full text-left rounded-lg border-2 border-zinc-900 px-3 py-3 transition-transform",
+                      "group w-full rounded-lg border-2 border-zinc-900 px-3 py-3 text-left transition-transform",
                       "shadow-[3px_3px_0_0_rgba(24,24,27,1)] hover:-translate-x-0.5 hover:-translate-y-0.5",
-                      active ? "bg-zinc-900/70 text-white" : "bg-white text-zinc-900",
+                      active
+                        ? "bg-zinc-900/70 text-white"
+                        : "bg-white text-zinc-900",
                     ].join(" ")}
                   >
                     <div className="flex items-center justify-between gap-3">
-                      <div className="min-w-0">
-                        <div className="flex items-center gap-2">
-                          <span className="font-semibold uppercase">{d.title}</span>
-                        </div>
-                      </div>
+                      <span className="truncate font-semibold uppercase">
+                        {d.title}
+                      </span>
 
                       <span
                         className={[
                           "shrink-0 rounded-md border-2 border-zinc-900 px-2 py-1 text-xs font-semibold",
-                          active ? "bg-white text-zinc-900" : "bg-zinc-100 text-zinc-900",
+                          active
+                            ? "bg-white text-zinc-900"
+                            : "bg-zinc-100 text-zinc-900",
                         ].join(" ")}
                       >
                         {active ? "Selected" : "View"}
@@ -63,24 +68,25 @@ export const FeatureToggles = () => {
             </div>
           </div>
         </div>
-        <div className="min-w-2">
-          <div className="rounded-xl border-2 border-zinc-900 bg-white shadow-[8px_8px_0_0_rgba(24,24,27,1)]">
+
+        {/* RIGHT */}
+        <div className="min-h-full">
+          <div className="overflow-hidden rounded-xl border-2 border-zinc-900 bg-white shadow-[8px_8px_0_0_rgba(24,24,27,1)]">
             <div className="flex flex-wrap items-center justify-between gap-2 border-b-2 border-zinc-900 px-4 py-3">
-              <div className="flex items-center gap-2">
-                <span className="text-sm font-semibold text-zinc-700 underline">
-                  {el.title}
-                </span>
-              </div>
+              <span className="text-sm font-semibold text-zinc-700 underline">
+                {el.title}
+              </span>
             </div>
 
-
-            <div className="p-4 md:p-6">
-              <FeatureDisplay
-                selected={selected}
-                // cardTitle={el.cardTitle}
-                cardSubtitle={el.cardSubtitle}
-                Component={el.Component}
-              />
+            {/* Stage: give the diagram a predictable space */}
+            <div className="relative p-4 md:p-6">
+              <div className="min-h-[380px] md:min-h-full">
+                <FeatureDisplay
+                  selected={selected}
+                  cardSubtitle={el.cardSubtitle}
+                  Component={el.Component}
+                />
+              </div>
             </div>
           </div>
 
